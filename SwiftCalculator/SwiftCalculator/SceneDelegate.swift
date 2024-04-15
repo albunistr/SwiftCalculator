@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  TinkoffCalculator
+//  SwiftCalculator
 //
-//  Created by Powers Mikaela on 28.03.2024.
+//  Created by Powers Mikaela on 4/15/24.
 //
 
 import UIKit

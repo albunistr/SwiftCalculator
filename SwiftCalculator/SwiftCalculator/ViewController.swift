@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  TinkoffCalculator
-//
-//  Created by Powers Mikaela on 28.03.2024.
-//
-
 import UIKit
 
 enum CalculationError: Error {
@@ -40,7 +33,7 @@ enum CalculationHistoryItem {
 }
 
 class ViewController: UIViewController {
-
+    
     @IBAction func buttonPassed(_ sender: UIButton) {
         guard let buttonText = sender.currentTitle else {return
         }
@@ -52,8 +45,8 @@ class ViewController: UIViewController {
         } else {
             label.text?.append(buttonText)
         }
-        
     }
+    
     @IBAction func operationButtonPassed(_ sender: UIButton) {
         guard
             let buttonText = sender.currentTitle,
@@ -71,13 +64,14 @@ class ViewController: UIViewController {
         resetLabelText()
     }
     
-    @IBAction func clearButtonPassed(_ sender: UIButton){
+    @IBAction func clearButtonPassed(_ sender: UIButton) {
         calculationHistory.removeAll()
         
         resetLabelText()
     }
     
-    @IBAction func calculateButtonPassed(_ sender: UIButton){
+    
+    @IBAction func calculateButtonPassed(_ sender: UIButton) {
         guard
             let labelText = label.text,
             let labelNumber = numberFormatter.number(from: labelText)?.doubleValue
@@ -129,5 +123,6 @@ class ViewController: UIViewController {
     func resetLabelText () {
         label.text = "0"
     }
+
 }
 
