@@ -2,4 +2,4 @@
 
 В качестве пет проекта реализовала калькулятор на языке Swift.
 
-<img src= "../SwiftCalculator/image.png" width="600"/>
+<img src= "image.png" width="600"/>
